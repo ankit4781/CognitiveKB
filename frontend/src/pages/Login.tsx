@@ -84,14 +84,13 @@ export const Login: React.FC = () => {
             <div className="space-y-1">
               <label className="text-xs font-semibold text-slate-400 pl-1">Username</label>
               <div className="relative">
-                <User className="absolute left-3.5 top-3.5 w-4.5 h-4.5 text-slate-500" />
                 <input
                   type="text"
                   required
                   placeholder="john_doe"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
-                  className="w-full custom-input pl-11 text-sm"
+                  className="w-full custom-input text-sm"
                 />
               </div>
             </div>
@@ -100,14 +99,13 @@ export const Login: React.FC = () => {
           <div className="space-y-1">
             <label className="text-xs font-semibold text-slate-400 pl-1">Email Address</label>
             <div className="relative">
-              <Mail className="absolute left-3.5 top-3.5 w-4.5 h-4.5 text-slate-500" />
               <input
                 type="email"
                 required
                 placeholder="you@example.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full custom-input pl-11 text-sm"
+                className="w-full custom-input text-sm"
               />
             </div>
           </div>
@@ -115,17 +113,17 @@ export const Login: React.FC = () => {
           <div className="space-y-1">
             <label className="text-xs font-semibold text-slate-400 pl-1">Password</label>
             <div className="relative">
-              <Lock className="absolute left-3.5 top-3.5 w-4.5 h-4.5 text-slate-500" />
               <input
                 type="password"
                 required
                 placeholder="••••••••"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full custom-input pl-11 text-sm"
+                className="w-full custom-input text-sm"
               />
             </div>
           </div>
+
 
           {/* Feedback alerts */}
           {error && (
